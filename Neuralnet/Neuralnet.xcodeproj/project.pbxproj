@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6480C481987000400923C83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C471987000400923C83 /* Foundation.framework */; };
+		D6480C4D1987000400923C83 /* XDNeuralnet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6480C4C1987000400923C83 /* XDNeuralnet.h */; };
+		D6480C4F1987000400923C83 /* XDNeuralnet.m in Sources */ = {isa = PBXBuildFile; fileRef = D6480C4E1987000400923C83 /* XDNeuralnet.m */; };
+		D6480C561987000400923C83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C551987000400923C83 /* XCTest.framework */; };
+		D6480C571987000400923C83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C471987000400923C83 /* Foundation.framework */; };
+		D6480C591987000400923C83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C581987000400923C83 /* UIKit.framework */; };
+		D6480C5C1987000400923C83 /* libNeuralnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C441987000400923C83 /* libNeuralnet.a */; };
+		D6480C621987000400923C83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6480C601987000400923C83 /* InfoPlist.strings */; };
+		D6480C641987000400923C83 /* NeuralnetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6480C631987000400923C83 /* NeuralnetTests.m */; };
+		D6480C6F19885A7C00923C83 /* XDLogistic.m in Sources */ = {isa = PBXBuildFile; fileRef = D6480C6E19885A7C00923C83 /* XDLogistic.m */; };
+		D6480C711988691C00923C83 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C701988691C00923C83 /* Accelerate.framework */; };
+		D6480C721988693300923C83 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C701988691C00923C83 /* Accelerate.framework */; };
+		D6480C74198AEA2300923C83 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C73198AEA2300923C83 /* Security.framework */; };
+		D6480C75198AEA2C00923C83 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480C73198AEA2300923C83 /* Security.framework */; };
+		D6583114199980EB0035B685 /* XDCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D6583113199980EB0035B685 /* XDCArray.m */; };
+		D6583119199981240035B685 /* CArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6583118199981240035B685 /* CArrayTests.m */; };
+		D665DB391995397C0005675B /* XDTraining.m in Sources */ = {isa = PBXBuildFile; fileRef = D665DB381995397C0005675B /* XDTraining.m */; };
+		D665DB3C19957C4E0005675B /* XDMath.m in Sources */ = {isa = PBXBuildFile; fileRef = D665DB3B19957C4E0005675B /* XDMath.m */; };
+		D665DB3F1995998D0005675B /* XDNeuralnetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D665DB3E1995998D0005675B /* XDNeuralnetTools.m */; };
+		D6C01A6E199188C9007583A7 /* XDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C01A6D199188C8007583A7 /* XDLayer.m */; };
+		D6FA6536199D5A0B007C92C4 /* XDTraining.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D665DB371995397C0005675B /* XDTraining.h */; };
+		D6FA6537199D5A0F007C92C4 /* XDLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6C01A6C199188C8007583A7 /* XDLayer.h */; };
+		D6FA653A199D6DC4007C92C4 /* XDNeuralnetTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D665DB3D1995998D0005675B /* XDNeuralnetTools.h */; };
+		D6FA653D199D8C33007C92C4 /* XDCArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6583112199980EB0035B685 /* XDCArray.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6480C5A1987000400923C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6480C3C1987000400923C83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6480C431987000400923C83;
+			remoteInfo = Neuralnet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6480C421987000400923C83 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D6FA653D199D8C33007C92C4 /* XDCArray.h in CopyFiles */,
+				D6FA653A199D6DC4007C92C4 /* XDNeuralnetTools.h in CopyFiles */,
+				D6FA6537199D5A0F007C92C4 /* XDLayer.h in CopyFiles */,
+				D6FA6536199D5A0B007C92C4 /* XDTraining.h in CopyFiles */,
+				D6480C4D1987000400923C83 /* XDNeuralnet.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D6480C441987000400923C83 /* libNeuralnet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNeuralnet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6480C471987000400923C83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6480C4B1987000400923C83 /* Neuralnet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neuralnet-Prefix.pch"; sourceTree = "<group>"; };
+		D6480C4C1987000400923C83 /* XDNeuralnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDNeuralnet.h; sourceTree = "<group>"; };
+		D6480C4E1987000400923C83 /* XDNeuralnet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDNeuralnet.m; sourceTree = "<group>"; };
+		D6480C541987000400923C83 /* NeuralnetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuralnetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6480C551987000400923C83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D6480C581987000400923C83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D6480C5F1987000400923C83 /* NeuralnetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NeuralnetTests-Info.plist"; sourceTree = "<group>"; };
+		D6480C611987000400923C83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6480C631987000400923C83 /* NeuralnetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeuralnetTests.m; sourceTree = "<group>"; };
+		D6480C6D19885A7C00923C83 /* XDLogistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLogistic.h; sourceTree = "<group>"; };
+		D6480C6E19885A7C00923C83 /* XDLogistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLogistic.m; sourceTree = "<group>"; };
+		D6480C701988691C00923C83 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D6480C73198AEA2300923C83 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D6583112199980EB0035B685 /* XDCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDCArray.h; sourceTree = "<group>"; };
+		D6583113199980EB0035B685 /* XDCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDCArray.m; sourceTree = "<group>"; };
+		D6583118199981240035B685 /* CArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CArrayTests.m; sourceTree = "<group>"; };
+		D665DB371995397C0005675B /* XDTraining.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDTraining.h; sourceTree = "<group>"; };
+		D665DB381995397C0005675B /* XDTraining.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDTraining.m; sourceTree = "<group>"; };
+		D665DB3A19957C4E0005675B /* XDMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDMath.h; sourceTree = "<group>"; };
+		D665DB3B19957C4E0005675B /* XDMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDMath.m; sourceTree = "<group>"; };
+		D665DB3D1995998D0005675B /* XDNeuralnetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDNeuralnetTools.h; sourceTree = "<group>"; };
+		D665DB3E1995998D0005675B /* XDNeuralnetTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDNeuralnetTools.m; sourceTree = "<group>"; };
+		D6C01A6C199188C8007583A7 /* XDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLayer.h; sourceTree = "<group>"; };
+		D6C01A6D199188C8007583A7 /* XDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6480C411987000400923C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6480C74198AEA2300923C83 /* Security.framework in Frameworks */,
+				D6480C481987000400923C83 /* Foundation.framework in Frameworks */,
+				D6480C711988691C00923C83 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6480C511987000400923C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6480C75198AEA2C00923C83 /* Security.framework in Frameworks */,
+				D6480C561987000400923C83 /* XCTest.framework in Frameworks */,
+				D6480C591987000400923C83 /* UIKit.framework in Frameworks */,
+				D6480C5C1987000400923C83 /* libNeuralnet.a in Frameworks */,
+				D6480C571987000400923C83 /* Foundation.framework in Frameworks */,
+				D6480C721988693300923C83 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6480C3B1987000400923C83 = {
+			isa = PBXGroup;
+			children = (
+				D6480C491987000400923C83 /* Neuralnet */,
+				D6480C5D1987000400923C83 /* NeuralnetTests */,
+				D6480C461987000400923C83 /* Frameworks */,
+				D6480C451987000400923C83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6480C451987000400923C83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6480C441987000400923C83 /* libNeuralnet.a */,
+				D6480C541987000400923C83 /* NeuralnetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6480C461987000400923C83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6480C73198AEA2300923C83 /* Security.framework */,
+				D6480C701988691C00923C83 /* Accelerate.framework */,
+				D6480C471987000400923C83 /* Foundation.framework */,
+				D6480C551987000400923C83 /* XCTest.framework */,
+				D6480C581987000400923C83 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6480C491987000400923C83 /* Neuralnet */ = {
+			isa = PBXGroup;
+			children = (
+				D6583112199980EB0035B685 /* XDCArray.h */,
+				D6583113199980EB0035B685 /* XDCArray.m */,
+				D665DB3A19957C4E0005675B /* XDMath.h */,
+				D665DB3B19957C4E0005675B /* XDMath.m */,
+				D6480C6D19885A7C00923C83 /* XDLogistic.h */,
+				D6480C6E19885A7C00923C83 /* XDLogistic.m */,
+				D665DB3D1995998D0005675B /* XDNeuralnetTools.h */,
+				D665DB3E1995998D0005675B /* XDNeuralnetTools.m */,
+				D6C01A6C199188C8007583A7 /* XDLayer.h */,
+				D6C01A6D199188C8007583A7 /* XDLayer.m */,
+				D665DB371995397C0005675B /* XDTraining.h */,
+				D665DB381995397C0005675B /* XDTraining.m */,
+				D6480C4C1987000400923C83 /* XDNeuralnet.h */,
+				D6480C4E1987000400923C83 /* XDNeuralnet.m */,
+				D6480C4A1987000400923C83 /* Supporting Files */,
+			);
+			path = Neuralnet;
+			sourceTree = "<group>";
+		};
+		D6480C4A1987000400923C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6480C4B1987000400923C83 /* Neuralnet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6480C5D1987000400923C83 /* NeuralnetTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6583118199981240035B685 /* CArrayTests.m */,
+				D6480C631987000400923C83 /* NeuralnetTests.m */,
+				D6480C5E1987000400923C83 /* Supporting Files */,
+			);
+			path = NeuralnetTests;
+			sourceTree = "<group>";
+		};
+		D6480C5E1987000400923C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6480C5F1987000400923C83 /* NeuralnetTests-Info.plist */,
+				D6480C601987000400923C83 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6480C431987000400923C83 /* Neuralnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6480C671987000400923C83 /* Build configuration list for PBXNativeTarget "Neuralnet" */;
+			buildPhases = (
+				D6480C401987000400923C83 /* Sources */,
+				D6480C411987000400923C83 /* Frameworks */,
+				D6480C421987000400923C83 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neuralnet;
+			productName = Neuralnet;
+			productReference = D6480C441987000400923C83 /* libNeuralnet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D6480C531987000400923C83 /* NeuralnetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6480C6A1987000400923C83 /* Build configuration list for PBXNativeTarget "NeuralnetTests" */;
+			buildPhases = (
+				D6480C501987000400923C83 /* Sources */,
+				D6480C511987000400923C83 /* Frameworks */,
+				D6480C521987000400923C83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6480C5B1987000400923C83 /* PBXTargetDependency */,
+			);
+			name = NeuralnetTests;
+			productName = NeuralnetTests;
+			productReference = D6480C541987000400923C83 /* NeuralnetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6480C3C1987000400923C83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Microsoft;
+			};
+			buildConfigurationList = D6480C3F1987000400923C83 /* Build configuration list for PBXProject "Neuralnet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6480C3B1987000400923C83;
+			productRefGroup = D6480C451987000400923C83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6480C431987000400923C83 /* Neuralnet */,
+				D6480C531987000400923C83 /* NeuralnetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6480C521987000400923C83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6480C621987000400923C83 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6480C401987000400923C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D665DB391995397C0005675B /* XDTraining.m in Sources */,
+				D665DB3C19957C4E0005675B /* XDMath.m in Sources */,
+				D6C01A6E199188C9007583A7 /* XDLayer.m in Sources */,
+				D6583114199980EB0035B685 /* XDCArray.m in Sources */,
+				D6480C4F1987000400923C83 /* XDNeuralnet.m in Sources */,
+				D665DB3F1995998D0005675B /* XDNeuralnetTools.m in Sources */,
+				D6480C6F19885A7C00923C83 /* XDLogistic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6480C501987000400923C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6480C641987000400923C83 /* NeuralnetTests.m in Sources */,
+				D6583119199981240035B685 /* CArrayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6480C5B1987000400923C83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6480C431987000400923C83 /* Neuralnet */;
+			targetProxy = D6480C5A1987000400923C83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6480C601987000400923C83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6480C611987000400923C83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6480C651987000400923C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6480C661987000400923C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6480C681987000400923C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Neuralnet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neuralnet/Neuralnet-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D6480C691987000400923C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Neuralnet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neuralnet/Neuralnet-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D6480C6B1987000400923C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neuralnet/Neuralnet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NeuralnetTests/NeuralnetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D6480C6C1987000400923C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neuralnet/Neuralnet-Prefix.pch";
+				INFOPLIST_FILE = "NeuralnetTests/NeuralnetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6480C3F1987000400923C83 /* Build configuration list for PBXProject "Neuralnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6480C651987000400923C83 /* Debug */,
+				D6480C661987000400923C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6480C671987000400923C83 /* Build configuration list for PBXNativeTarget "Neuralnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6480C681987000400923C83 /* Debug */,
+				D6480C691987000400923C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6480C6A1987000400923C83 /* Build configuration list for PBXNativeTarget "NeuralnetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6480C6B1987000400923C83 /* Debug */,
+				D6480C6C1987000400923C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6480C3C1987000400923C83 /* Project object */;
+}
