@@ -1,7 +1,7 @@
 Data-Tools
 =========
 
-For doing fun things with data on iphone or osx.
+For doing fun things with data on iOS or osx.
 
 ##Tools
   - Neuralnet - forward and backward propagation
