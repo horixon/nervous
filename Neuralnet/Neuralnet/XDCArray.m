@@ -26,5 +26,6 @@
     memcpy(tmp, target, sizeof(float) * targetCount);
     memcpy(target, insert, sizeof(float) * insertCount);
     memcpy(target + insertCount, tmp, sizeof(float) * (targetCount-insertCount) );
+    free(tmp);
 }
 @end
