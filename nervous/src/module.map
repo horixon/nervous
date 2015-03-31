@@ -1,0 +1,4 @@
+module Nervous [system] {
+    header "./nervous.h"
+    export *
+}
