@@ -14,7 +14,7 @@ class NervousTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        blasinit()
     }
     
     override func tearDown() {
@@ -22,11 +22,16 @@ class NervousTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        let a = testfoo()
-        
-        XCTAssertEqual(a[0],Float(1))
-        XCTAssertEqual(a[1],Float(1))
+    func testFoo() {
+        let actual = testfoo()
+        let expected: [Float] = [1, 1]
+        XCTAssertEqual(expected, actual)
+    }
+    
+    func testMonkey() {
+        let actual = testfoo2()
+        let expected = [-4, -5, -3]
+        XCTAssertEqual(expected, actual)
     }
     
 }

@@ -12,4 +12,5 @@
 
 void initblas() {
     Blas.sset = catlas_sset;
+    Blas.sgemv = cblas_sgemv;
 }

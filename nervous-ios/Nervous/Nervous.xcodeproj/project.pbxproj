@@ -13,7 +13,7 @@
 		D6732BBF1ACB45270077EAA9 /* Neuralnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6732BBE1ACB45270077EAA9 /* Neuralnet.swift */; };
 		D6732BC21ACB46C00077EAA9 /* initblas.c in Sources */ = {isa = PBXBuildFile; fileRef = D6732BC01ACB46C00077EAA9 /* initblas.c */; };
 		D6732BC31ACB46C00077EAA9 /* initblas.h in Headers */ = {isa = PBXBuildFile; fileRef = D6732BC11ACB46C00077EAA9 /* initblas.h */; };
-		D6732BC51ACB4AF60077EAA9 /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6732BC41ACB4AF60077EAA9 /* libnervous.a */; };
+		D68E26191ACB64A000AB88FB /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6732BC41ACB4AF60077EAA9 /* libnervous.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6732BC51ACB4AF60077EAA9 /* libnervous.a in Frameworks */,
+				D68E26191ACB64A000AB88FB /* libnervous.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,7 @@
 				INFOPLIST_FILE = Nervous/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/justiwag/workspace/nervous/nervous;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -375,7 +375,7 @@
 				INFOPLIST_FILE = Nervous/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/justiwag/workspace/nervous/nervous;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -446,6 +446,7 @@
 				D6732BBA1ACB45070077EAA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6732BBB1ACB45070077EAA9 /* Build configuration list for PBXNativeTarget "NervousTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +455,7 @@
 				D6732BBD1ACB45070077EAA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

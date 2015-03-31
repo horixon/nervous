@@ -23,7 +23,6 @@
 		D6C484A91A3BA61D00BB3588 /* Logistic.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C4849A1A3BA61D00BB3588 /* Logistic.m */; };
 		D6C484AA1A3BA61D00BB3588 /* FloatMath.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C4849B1A3BA61D00BB3588 /* FloatMath.h */; };
 		D6C484AB1A3BA61D00BB3588 /* FloatMath.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C4849C1A3BA61D00BB3588 /* FloatMath.m */; };
-		D6C484AC1A3BA61D00BB3588 /* Neuralnet-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D6C4849D1A3BA61D00BB3588 /* Neuralnet-Prefix.pch */; };
 		D6C484AD1A3BA61D00BB3588 /* NeuralnetTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C4849E1A3BA61D00BB3588 /* NeuralnetTools.h */; };
 		D6C484B11A3BA62B00BB3588 /* CArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C484AE1A3BA62B00BB3588 /* CArrayTests.m */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		D6C4849A1A3BA61D00BB3588 /* Logistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logistic.m; sourceTree = "<group>"; };
 		D6C4849B1A3BA61D00BB3588 /* FloatMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatMath.h; sourceTree = "<group>"; };
 		D6C4849C1A3BA61D00BB3588 /* FloatMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatMath.m; sourceTree = "<group>"; };
-		D6C4849D1A3BA61D00BB3588 /* Neuralnet-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Neuralnet-Prefix.pch"; sourceTree = "<group>"; };
 		D6C4849E1A3BA61D00BB3588 /* NeuralnetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuralnetTools.h; sourceTree = "<group>"; };
 		D6C484AE1A3BA62B00BB3588 /* CArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +114,6 @@
 				D6C4849A1A3BA61D00BB3588 /* Logistic.m */,
 				D6C4849B1A3BA61D00BB3588 /* FloatMath.h */,
 				D6C4849C1A3BA61D00BB3588 /* FloatMath.m */,
-				D6C4849D1A3BA61D00BB3588 /* Neuralnet-Prefix.pch */,
 				D6C4849E1A3BA61D00BB3588 /* NeuralnetTools.h */,
 				D6C484791A3BA53100BB3588 /* Neuralnet.h */,
 				D6C484771A3BA53100BB3588 /* Supporting Files */,
@@ -164,7 +161,6 @@
 				D6C4849F1A3BA61D00BB3588 /* Net.h in Headers */,
 				D6C4847A1A3BA53100BB3588 /* Neuralnet.h in Headers */,
 				D6C484A21A3BA61D00BB3588 /* Training.h in Headers */,
-				D6C484AC1A3BA61D00BB3588 /* Neuralnet-Prefix.pch in Headers */,
 				D6C484AA1A3BA61D00BB3588 /* FloatMath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +454,7 @@
 				D6C4848C1A3BA53100BB3588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6C4848D1A3BA53100BB3588 /* Build configuration list for PBXNativeTarget "NeuralnetTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +463,7 @@
 				D6C4848F1A3BA53100BB3588 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,8 +20,20 @@
 import Nervous
 import Initblas
 
-public func testfoo() -> [Float] {
+public func blasinit() {
     initblas()
+}
+
+public func testfoo2() -> [Float] {
+    var a: [Float] = [3.0, 4.0, 5.0, 7.0, 9.0, 8.0]
+    var v: [Float] = [1.0, -1.0]
+    var actual: [Float] = [0.0, 0.0, 0.0]
+    
+    monkey(3, 2, Float(1.0), &a, 3, &v, 1, Float(1.0), &actual, 1)
+    return actual
+}
+
+public func testfoo() -> [Float] {
     
     var x:[Float] = [0,0]
     
@@ -29,3 +41,4 @@ public func testfoo() -> [Float] {
     
     return x
 }
+

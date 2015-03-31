@@ -19,6 +19,15 @@
 
 #include "blasfuncs.h"
 
+extern "C" float fourtytwo() {
+	return 42;
+}
+
 extern "C" void foo(int n, float alpha, float* x) {
 	Blas.sset(n, alpha, x, 1);
+}
+
+extern "C" void monkey(int M,int N,float alpha,const float *A,int lda,const float *X,int incX,float beta,float *Y,int incY) {
+	
+	Blas.sgemv(CblasColMajor,CblasNoTrans,M,N,alpha,A,lda,X,incX,beta,Y,incY);
 }
