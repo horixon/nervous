@@ -23,28 +23,15 @@ import Initblas
 public func blasinit() {
     initblas()
     
-    let n = netarchitecture
- 
+    let _ = netarchitecture
+    let _ = forwardprop
+    let _ = outputactivations
+    let _ = outputactivationsindex
+    let _ = seed
+    let _ = randomizethetas
+    let _ = activation
+    let _ = columnmajortheta
+    let _ = vanillabackprop
+    let _ = steepestdecent
+    let _ = regularization
 }
-
-public func testfoo2() -> [Float] {
-    var a: [Float] = [3.0, 4.0, 5.0, 7.0, 9.0, 8.0]
-    var v: [Float] = [1.0, -1.0]
-    var actual: [Float] = [0.0, 0.0, 0.0]
-    
-    monkey(3, 2, Float(1.0), &a, 3, &v, 1, Float(1.0), &actual, 1)
-    return actual
-}
-
-public func testfoo() -> [Float] {
-    
-    var x:[Float] = [0,0]
-    
-    foo(2, 1, &x)
-    
-    
-    return x
-}
-
-
-

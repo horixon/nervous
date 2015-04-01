@@ -4,7 +4,4 @@
    <FileRef
       location = "group:Nervous/Nervous.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Neuralnet/Neuralnet.xcodeproj">
-   </FileRef>
 </Workspace>

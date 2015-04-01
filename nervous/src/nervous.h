@@ -27,10 +27,20 @@
 
 #include "netarch.h"
 
-NERVOUSDECL float fourtytwo();
-NERVOUSDECL void monkey(int M,int N,float alpha,const float *A,int lda,const float *X,int incX,float beta,float *Y,int incY);
-NERVOUSDECL void foo(int n, float alpha, float* x);
 NERVOUSDECL NetArch netarchitecture(const int* unitcounts,int depth);
 NERVOUSDECL int memorysizethetas(NetArch net);
 NERVOUSDECL int memorysizeactivations(NetArch net);
 NERVOUSDECL int memorysizegradient(NetArch net);
+NERVOUSDECL int outputactivationsindex(NetArch netarch);
+NERVOUSDECL const float* outputactivations(NetArch netarch, const float *activations);
+NERVOUSDECL void seed(long seed);
+NERVOUSDECL void randomizethetas(NetArch netarch, float *thetas);
+NERVOUSDECL void zerobias(NetArch netarch, float *thetas);
+NERVOUSDECL void columnmajortheta(const float* bias, const float* weights, int columns, int rows, float* result);
+NERVOUSDECL void activation(const float* x, const float *bias, const float *weights, int columns, int rows, float  *a1);
+NERVOUSDECL void forwardprop(NetArch netarch, const float* thetas, const float* x ,float* activations);
+NERVOUSDECL void vanillabackprop(NetArch netarch, const float *thetas, const float *activations, const float *y, float *derivative);
+NERVOUSDECL void steepestdecent(NetArch netarch, const float *grad, float alpha, float *x);
+NERVOUSDECL void regularization(NetArch netarch, float *gradient, const float *thetas, float l1RegFactor, float l2RegFactor);
+NERVOUSDECL void signtheta(float* x, int count);
+NERVOUSDECL float adaptiverate(const float *gradient, float memory, float alpha, float beta, float learningRate, int parametersCounts, float *runningAverageGradient);

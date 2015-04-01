@@ -31,10 +31,13 @@ enum CBLAS_SIDE {CblasLeft=141, CblasRight=142};
 }
 #endif
 
-
 struct BlasFuncs {
-	void (*sset) (const int, const float, float*, const int);
-	void (*sgemv) (const enum CBLAS_ORDER __Order,const enum CBLAS_TRANSPOSE __TransA,const int __M,const int __N,const float __alpha,const float *__A,const int __lda,const float *__X,const int __incX,const float __beta,float *__Y,const int __incY);
+	void (*set)(int, float, float*, int);
+	void (*gemv)(enum CBLAS_ORDER, enum CBLAS_TRANSPOSE, int, int, float, const float *, int, const float *, int, float, float *, int);
+	void (*ger)(enum CBLAS_ORDER, int, int, float, const float*, int, const float*, int, float*, int);
+  	void (*axpy)(int, float, const float *, int, float*, int);
+  	float (*nrm2)(int, const float *, int);
+	void (*vmul)(const float *, long, const float *, long, float*, long, unsigned long);
 };
 
 extern struct BlasFuncs Blas;

@@ -25,9 +25,21 @@ extern "C" NetArch netarchitecture(const int* unitcounts,int depth) {
 extern "C" int memorysizethetas(NetArch net) {
 	return sizeof(float) * net.parameterscount;
 }
+
 extern "C" int memorysizeactivations(NetArch net) {
 	return sizeof(float) * net.units;
 }
+
 extern "C" int memorysizegradient(NetArch net) {
 	return memorysizethetas(net);
+}
+
+extern "C" int outputactivationsindex(NetArch netarch)
+{
+    return netarch.units - netarch.outputunits;
+}
+
+extern "C" const float* outputactivations(NetArch netarch, const float *activations)
+{
+    return activations + outputactivationsindex(netarch);
 }

@@ -11,6 +11,10 @@
 #include <Accelerate/Accelerate.h>
 
 void initblas() {
-    Blas.sset = catlas_sset;
-    Blas.sgemv = cblas_sgemv;
+    Blas.set = catlas_sset;
+    Blas.gemv = cblas_sgemv;
+    Blas.ger = cblas_sger;
+    Blas.axpy = cblas_saxpy;
+    Blas.nrm2 = cblas_snrm2;
+    Blas.vmul = vDSP_vmul;
 }

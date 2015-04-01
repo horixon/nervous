@@ -1,3 +1,5 @@
+#pragma once
+
 typedef struct NetArch {
 	const int* unitcounts;
 	int depth;
