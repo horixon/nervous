@@ -1,4 +1,4 @@
 module Initblas [system] {
-    header "./initblas.h"
+    header "initblas.h"
     export *
 }

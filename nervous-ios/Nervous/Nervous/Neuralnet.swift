@@ -22,6 +22,9 @@ import Initblas
 
 public func blasinit() {
     initblas()
+    
+    let n = netarchitecture
+ 
 }
 
 public func testfoo2() -> [Float] {
@@ -43,11 +46,5 @@ public func testfoo() -> [Float] {
     return x
 }
 
-public func testnet() {
-    
-    let netarch = NetArch(unitcounts: [5,4,3], depth: 3)
-    let netdetail = details(netarch)
-    
-    println(netdetail)
-}
+
 

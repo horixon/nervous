@@ -34,8 +34,4 @@ class NervousTests: XCTestCase {
         XCTAssertEqual(expected, actual)
     }
     
-    func testNet() {
-        testnet()
-    }
-    
 }

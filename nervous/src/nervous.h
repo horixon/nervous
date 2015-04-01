@@ -30,4 +30,7 @@
 NERVOUSDECL float fourtytwo();
 NERVOUSDECL void monkey(int M,int N,float alpha,const float *A,int lda,const float *X,int incX,float beta,float *Y,int incY);
 NERVOUSDECL void foo(int n, float alpha, float* x);
-NERVOUSDECL NetDetail details(NetArch arch);
+NERVOUSDECL NetArch netarchitecture(const int* unitcounts,int depth);
+NERVOUSDECL int memorysizethetas(NetArch net);
+NERVOUSDECL int memorysizeactivations(NetArch net);
+NERVOUSDECL int memorysizegradient(NetArch net);

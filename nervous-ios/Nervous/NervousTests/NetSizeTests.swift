@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nervous
 
 class NetSizeTests: XCTestCase {
 
@@ -20,44 +21,36 @@ class NetSizeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    
+    func makenetarch()-> NetArch {
+        return netarchitecture([4,5,4,3],4)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testParametersize() {
+        let netarch = makenetarch()
+        let expected = Int32(sizeof(Float)*64)
+        let actual = memorysizethetas(netarch)
+        
+        XCTAssertEqual(expected, actual)
+    }
+    
+    func testActivationsize() {
+        let netarch = makenetarch()
+        let expected = Int32(sizeof(Float)*16)
+        let actual = memorysizeactivations(netarch)
+        
+        XCTAssertEqual(expected, actual)
+    }
+    
+    func testGradientsize() {
+        let netarch = makenetarch()
+        let expected = Int32(sizeof(Float)*64)
+        let actual = memorysizegradient(netarch)
+        
+        XCTAssertEqual(expected, actual)
     }
     
     /*
-    -(void)testParameterSize
-    {
-    int netUnitCounts[] = {4, 5, 4, 3};
-    Net *net = [[Net alloc] initNetWithUnitCounts:netUnitCounts netDepth:4];
-    
-    XCTAssertTrue(net.memorySizeThetas == sizeof(float)*64);
-    }
-    
-    -(void)testActivationSize
-    {
-    int netUnitCounts[] = {4, 5, 4, 3};
-    Net *net = [[Net alloc] initNetWithUnitCounts:netUnitCounts netDepth:4];
-    
-    XCTAssertTrue(net.memorySizeActivations == sizeof(float)*16);
-    }
-    
-    -(void)testGradientSize
-    {
-    int netUnitCounts[] = {4, 5, 4, 3};
-    Net *net = [[Net alloc] initNetWithUnitCounts:netUnitCounts netDepth:4];
-    
-    XCTAssertTrue(net.memorySizeGradient == sizeof(float)*64);
-    }
-    
     -(void)testRandomNetInit
     {
     int netUnitCounts[] = {4, 5, 4, 3};

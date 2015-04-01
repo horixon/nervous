@@ -1,23 +1,33 @@
 #include "netarch.h"
 #include "nettools.h"
 
-extern "C" NetDetail details(NetArch arch) {
-	int output = arch.depth - 1;
-    int lasthidden = arch.depth - 2;
-    int inputunits = arch.unitcounts[0];
-    int outputunits = arch.unitcounts[output];
+extern "C" NetArch netarchitecture(const int* unitcounts,int depth) {
+	int indexoutput = depth - 1;
+    int indexlasthidden = depth - 2;
+    int inputunits = unitcounts[0];
+    int outputunits = unitcounts[indexoutput];
 
     int parameterscount = 0;
     int units = inputunits;
     
-    for(int i=0;i < output;i++)
+    for(int i=0;i < indexoutput;i++)
     {
-        int n = arch.unitcounts[i];
-        int m = arch.unitcounts[i+1];
+        int n = unitcounts[i];
+        int m = unitcounts[i+1];
         
         parameterscount += thetacount(n,m);
         units += m;
     }
 
-	return {units,inputunits,outputunits,parameterscount,output,lasthidden};
+	return {unitcounts,depth,units,inputunits,outputunits,parameterscount,indexoutput,indexlasthidden};
+}
+
+extern "C" int memorysizethetas(NetArch net) {
+	return sizeof(float) * net.parameterscount;
+}
+extern "C" int memorysizeactivations(NetArch net) {
+	return sizeof(float) * net.units;
+}
+extern "C" int memorysizegradient(NetArch net) {
+	return memorysizethetas(net);
 }

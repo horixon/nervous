@@ -1,5 +1,5 @@
 //
-//  Math.m
+//  Math.h
 //  Neuralnet
 //
 //  data-tools ver. 01
@@ -17,15 +17,4 @@
 //  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-float signOfFloat(float x)
-{
-    return x<0?-1:x==0?0:1;
-}
-
-void signOfFloatArray(float* x, int count)
-{
-    for(int i=0;i<count;i++)
-    {
-        x[i] = signOfFloat(x[i]);
-    }
-}
+void sign(float* x, int count);
