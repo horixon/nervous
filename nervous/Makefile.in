@@ -134,6 +134,7 @@ libnervous_a_AR = $(AR) $(ARFLAGS)
 libnervous_a_LIBADD =
 am__dirstamp = $(am__leading_dot)dirstamp
 am_libnervous_a_OBJECTS = src/blasfuncs.$(OBJEXT) \
+	src/netarch.$(OBJEXT) src/nettools.$(OBJEXT) \
 	src/FloatMath.$(OBJEXT) src/foo.$(OBJEXT)
 libnervous_a_OBJECTS = $(am_libnervous_a_OBJECTS)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -302,7 +303,7 @@ top_srcdir = @top_srcdir@
 AM_CXXFLAGS = -g -pedantic -Wall -std=c++11 -Iinclude -Isrc
 AM_LDFLAGS = 
 lib_LIBRARIES = libnervous.a
-libnervous_a_SOURCES = src/blasfuncs.cpp src/FloatMath.cpp src/foo.cpp
+libnervous_a_SOURCES = src/blasfuncs.cpp src/netarch.cpp src/nettools.cpp src/FloatMath.cpp src/foo.cpp
 ACLOCAL_AMFLAGS = -I m4 --install
 EXTRA_DIST = m4/NOTES
 all: config.h
@@ -394,6 +395,8 @@ src/$(am__dirstamp):
 	@$(MKDIR_P) src
 	@: > src/$(am__dirstamp)
 src/blasfuncs.$(OBJEXT): src/$(am__dirstamp)
+src/netarch.$(OBJEXT): src/$(am__dirstamp)
+src/nettools.$(OBJEXT): src/$(am__dirstamp)
 src/FloatMath.$(OBJEXT): src/$(am__dirstamp)
 src/foo.$(OBJEXT): src/$(am__dirstamp)
 

@@ -1,4 +1,5 @@
 module Nervous [system] {
     header "./nervous.h"
+    header "./netarch.h"
     export *
 }

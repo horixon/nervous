@@ -39,6 +39,15 @@ public func testfoo() -> [Float] {
     
     foo(2, 1, &x)
     
+    
     return x
+}
+
+public func testnet() {
+    
+    let netarch = NetArch(unitcounts: [5,4,3], depth: 3)
+    let netdetail = details(netarch)
+    
+    println(netdetail)
 }
 

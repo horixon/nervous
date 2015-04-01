@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D67271091ACB7A2A001CAE42 /* NetSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */; };
 		D6732BA81ACB45070077EAA9 /* Nervous.h in Headers */ = {isa = PBXBuildFile; fileRef = D6732BA71ACB45070077EAA9 /* Nervous.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6732BAE1ACB45070077EAA9 /* Nervous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6732BA21ACB45070077EAA9 /* Nervous.framework */; };
 		D6732BB51ACB45070077EAA9 /* NervousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6732BB41ACB45070077EAA9 /* NervousTests.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetSizeTests.swift; sourceTree = "<group>"; };
 		D6732BA21ACB45070077EAA9 /* Nervous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nervous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6732BA61ACB45070077EAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6732BA71ACB45070077EAA9 /* Nervous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nervous.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D6732BB41ACB45070077EAA9 /* NervousTests.swift */,
+				D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */,
 				D6732BB21ACB45070077EAA9 /* Supporting Files */,
 			);
 			path = NervousTests;
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67271091ACB7A2A001CAE42 /* NetSizeTests.swift in Sources */,
 				D6732BB51ACB45070077EAA9 /* NervousTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,9 @@
 #define NERVOUSDECL
 #endif
 
+#include "netarch.h"
+
 NERVOUSDECL float fourtytwo();
 NERVOUSDECL void monkey(int M,int N,float alpha,const float *A,int lda,const float *X,int incX,float beta,float *Y,int incY);
 NERVOUSDECL void foo(int n, float alpha, float* x);
+NERVOUSDECL NetDetail details(NetArch arch);
