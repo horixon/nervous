@@ -1,7 +1,6 @@
 #pragma once
 #include "netarch.h"
-
-int thetacount(int n, int m);
+#include "nervous.h"
 
 template<typename T, typename CALLBACK>
 void enumaratethetas(T *thetas, const NetArch *netarch, CALLBACK block)

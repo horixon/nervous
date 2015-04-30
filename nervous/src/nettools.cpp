@@ -16,7 +16,7 @@ extern "C" void seed(long seed)
     generatortimer.seed(seed);
 }
 
-int thetacount(int n, int m) 
+extern "C" int thetacount(int n, int m) 
 {
     return n * m + m;
 }

@@ -22,16 +22,50 @@ import Initblas
 
 public func blasinit() {
     initblas()
+}
+
+public class SteepestDescentNet {
+    let arch: NetArch
+    public var theta: [Float]
+    var a: [Float]
+    var grad: [Float]
+    let alpha: Float
+    var counts: [Int32]
     
-    let _ = netarchitecture
-    let _ = forwardprop
-    let _ = outputactivations
-    let _ = outputactivationsindex
-    let _ = seed
-    let _ = randomizethetas
-    let _ = activation
-    let _ = columnmajortheta
-    let _ = vanillabackprop
-    let _ = steepestdecent
-    let _ = regularization
+    public init(netunitcounts: [Int], initialthetas: [Float], alpha: Float) {
+        initblas()
+
+        theta = initialthetas
+        
+        counts = netunitcounts.map {(x: Int) -> Int32 in Int32(x)}
+        arch = netarchitecture(counts, Int32(counts.count))
+        
+        a = [Float](count: Int(arch.units), repeatedValue: 0.0)
+        
+        grad = [Float](count: Int(arch.parameterscount), repeatedValue: 0.0)
+
+        self.alpha = alpha
+    }
+    
+    public func setactivations(var x: [Float]) {
+        forwardprop(arch, theta, x, &a)
+    }
+    
+    public func updatetheta(var observations: [Float], var x: [Float]) {
+        setactivations(x)
+        vanillabackprop(arch, theta, &a, observations, &grad)
+        steepestdecent(arch, grad, alpha, &theta)
+    }
+    
+    public func activations() -> [Float]{
+        return Array(a[a.count - Int(arch.outputunits) ... a.count - 1])
+    }
+}
+
+public func layersize(layernumber:Int, netunitcounts:[Int]) -> Int {
+    let counts = netunitcounts.map {(x: Int) -> Int32 in Int32(x)}
+    let inputunits = Int32(counts[layernumber])
+    let output = Int32(counts[layernumber + 1])
+    
+    return Int(thetacount(inputunits,output))
 }

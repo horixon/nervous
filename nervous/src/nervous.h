@@ -44,3 +44,4 @@ NERVOUSDECL void steepestdecent(NetArch netarch, const float *grad, float alpha,
 NERVOUSDECL void regularization(NetArch netarch, float *gradient, const float *thetas, float l1RegFactor, float l2RegFactor);
 NERVOUSDECL void signtheta(float* x, int count);
 NERVOUSDECL float adaptiverate(const float *gradient, float memory, float alpha, float beta, float learningRate, int parametersCounts, float *runningAverageGradient);
+NERVOUSDECL int thetacount(int n, int m);

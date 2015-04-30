@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D63010291AF2D48F00A1E465 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63010281AF2D48F00A1E465 /* Fixture.swift */; };
+		D630102B1AF2DF9500A1E465 /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D630102A1AF2DF9500A1E465 /* libnervous.a */; };
+		D630102D1AF2E1A600A1E465 /* NeuralnetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630102C1AF2E1A600A1E465 /* NeuralnetTests.swift */; };
+		D630102F1AF2E1F100A1E465 /* NetFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630102E1AF2E1F100A1E465 /* NetFixture.swift */; };
 		D67271091ACB7A2A001CAE42 /* NetSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */; };
 		D6732BA81ACB45070077EAA9 /* Nervous.h in Headers */ = {isa = PBXBuildFile; fileRef = D6732BA71ACB45070077EAA9 /* Nervous.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6732BAE1ACB45070077EAA9 /* Nervous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6732BA21ACB45070077EAA9 /* Nervous.framework */; };
@@ -15,7 +18,6 @@
 		D6732BBF1ACB45270077EAA9 /* Neuralnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6732BBE1ACB45270077EAA9 /* Neuralnet.swift */; };
 		D6732BC21ACB46C00077EAA9 /* initblas.c in Sources */ = {isa = PBXBuildFile; fileRef = D6732BC01ACB46C00077EAA9 /* initblas.c */; };
 		D6732BC31ACB46C00077EAA9 /* initblas.h in Headers */ = {isa = PBXBuildFile; fileRef = D6732BC11ACB46C00077EAA9 /* initblas.h */; };
-		D68E26191ACB64A000AB88FB /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6732BC41ACB4AF60077EAA9 /* libnervous.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		D63010281AF2D48F00A1E465 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		D630102A1AF2DF9500A1E465 /* libnervous.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnervous.a; path = ../../nervous/lib/libnervous.a; sourceTree = "<group>"; };
+		D630102C1AF2E1A600A1E465 /* NeuralnetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralnetTests.swift; sourceTree = "<group>"; };
+		D630102E1AF2E1F100A1E465 /* NetFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetFixture.swift; sourceTree = "<group>"; };
 		D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetSizeTests.swift; sourceTree = "<group>"; };
 		D6732BA21ACB45070077EAA9 /* Nervous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nervous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6732BA61ACB45070077EAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +45,6 @@
 		D6732BBE1ACB45270077EAA9 /* Neuralnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neuralnet.swift; sourceTree = "<group>"; };
 		D6732BC01ACB46C00077EAA9 /* initblas.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initblas.c; sourceTree = "<group>"; };
 		D6732BC11ACB46C00077EAA9 /* initblas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initblas.h; sourceTree = "<group>"; };
-		D6732BC41ACB4AF60077EAA9 /* libnervous.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnervous.a; path = ../../nervous/libnervous.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68E26191ACB64A000AB88FB /* libnervous.a in Frameworks */,
+				D630102B1AF2DF9500A1E465 /* libnervous.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +70,7 @@
 		D6732B981ACB45070077EAA9 = {
 			isa = PBXGroup;
 			children = (
-				D6732BC41ACB4AF60077EAA9 /* libnervous.a */,
+				D630102A1AF2DF9500A1E465 /* libnervous.a */,
 				D6732BA41ACB45070077EAA9 /* Nervous */,
 				D6732BB11ACB45070077EAA9 /* NervousTests */,
 				D6732BA31ACB45070077EAA9 /* Products */,
@@ -105,7 +109,9 @@
 		D6732BB11ACB45070077EAA9 /* NervousTests */ = {
 			isa = PBXGroup;
 			children = (
+				D630102E1AF2E1F100A1E465 /* NetFixture.swift */,
 				D63010281AF2D48F00A1E465 /* Fixture.swift */,
+				D630102C1AF2E1A600A1E465 /* NeuralnetTests.swift */,
 				D6732BB41ACB45070077EAA9 /* NervousTests.swift */,
 				D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */,
 				D6732BB21ACB45070077EAA9 /* Supporting Files */,
@@ -238,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D630102D1AF2E1A600A1E465 /* NeuralnetTests.swift in Sources */,
+				D630102F1AF2E1F100A1E465 /* NetFixture.swift in Sources */,
 				D67271091ACB7A2A001CAE42 /* NetSizeTests.swift in Sources */,
 				D6732BB51ACB45070077EAA9 /* NervousTests.swift in Sources */,
 				D63010291AF2D48F00A1E465 /* Fixture.swift in Sources */,
@@ -348,20 +356,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../nervous/src",
-					"$(SRCROOT)/Nervous",
+					"$(SRCROOT)/../../nervous/lib/include",
 				);
 				INFOPLIST_FILE = Nervous/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../nervous/lib",
+					"$(SRCROOT)/Nervous",
+				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/src $(SRCROOT)/Nervous";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/lib/include $(SRCROOT)/Nervous";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -374,20 +385,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../nervous/src",
-					"$(SRCROOT)/Nervous",
+					"$(SRCROOT)/../../nervous/lib/include",
 				);
 				INFOPLIST_FILE = Nervous/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../nervous/lib",
+					"$(SRCROOT)/Nervous",
+				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/src $(SRCROOT)/Nervous";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/lib/include $(SRCROOT)/Nervous";
 			};
 			name = Release;
 		};
@@ -404,6 +418,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NervousTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +435,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NervousTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
 				PRODUCT_NAME = "$(TARGET_NAME)";
