@@ -1,4 +1,4 @@
-module Nervous [system] {
+module Nerves [system] {
     header "nervous.h"
     export *
 }

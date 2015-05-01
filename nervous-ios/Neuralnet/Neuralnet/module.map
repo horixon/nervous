@@ -1,7 +1,0 @@
-module nervous [system] {
-    header "./Net.h"
-	header "./Layer.h"
-	header "./Training.h"
-	header "./NeuralnetTools.h"
-    export *
-}

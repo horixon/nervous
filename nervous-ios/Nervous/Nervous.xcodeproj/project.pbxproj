@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61E0B1C1AF2FBAC00B12841 /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D630102A1AF2DF9500A1E465 /* libnervous.a */; };
 		D63010291AF2D48F00A1E465 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63010281AF2D48F00A1E465 /* Fixture.swift */; };
-		D630102B1AF2DF9500A1E465 /* libnervous.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D630102A1AF2DF9500A1E465 /* libnervous.a */; };
 		D630102D1AF2E1A600A1E465 /* NeuralnetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630102C1AF2E1A600A1E465 /* NeuralnetTests.swift */; };
 		D630102F1AF2E1F100A1E465 /* NetFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D630102E1AF2E1F100A1E465 /* NetFixture.swift */; };
 		D67271091ACB7A2A001CAE42 /* NetSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67271081ACB7A2A001CAE42 /* NetSizeTests.swift */; };
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D630102B1AF2DF9500A1E465 /* libnervous.a in Frameworks */,
+				D61E0B1C1AF2FBAC00B12841 /* libnervous.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +420,9 @@
 				INFOPLIST_FILE = NervousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous/lib/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/src $(SRCROOT)/Nervous";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/lib/include $(SRCROOT)/Nervous";
 			};
 			name = Debug;
 		};
@@ -437,9 +437,9 @@
 				INFOPLIST_FILE = NervousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../nervous/lib/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/src $(SRCROOT)/Nervous";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../../nervous/lib/include $(SRCROOT)/Nervous";
 			};
 			name = Release;
 		};
