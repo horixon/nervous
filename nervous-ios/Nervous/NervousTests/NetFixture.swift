@@ -1,5 +1,5 @@
 //
-//  XDCArray.h
+//  NetFixture.swift
 //  Neuralnet
 //
 //  data-tools ver. 01

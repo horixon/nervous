@@ -1,5 +1,5 @@
 //
-//  XDCArray.h
+//  initblas.c
 //  Neuralnet
 //
 //  data-tools ver. 01

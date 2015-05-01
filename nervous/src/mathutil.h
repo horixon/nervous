@@ -1,5 +1,5 @@
 //
-//  Math.h
+//  mathutil.h
 //  Neuralnet
 //
 //  data-tools ver. 01

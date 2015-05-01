@@ -1,5 +1,5 @@
 //
-//  XDCArray.h
+//  nervous.h
 //  Neuralnet
 //
 //  data-tools ver. 01

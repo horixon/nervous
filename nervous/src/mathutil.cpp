@@ -1,5 +1,5 @@
 //
-//  Math.m
+//  mathutil.cpp
 //  Neuralnet
 //
 //  data-tools ver. 01
