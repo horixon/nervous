@@ -8,31 +8,32 @@ Cross platform Neuralnet
   - Logistic - sigmoid
 
 ##Platforms
-  - Core neuralnet in C/C++
-  - iOS swift wrapper
+  - Core neuralnet in C++ with C API
+  - iOS Swift wrapper
 
 ###Neural Net
-Neuralnet with forward and backward propagation.  Implemented iOS using [Accelerate Framework](https://developer.apple.com/library/mac/documentation/Accelerate/Reference/AccelerateFWRef/_index.html).  Net training with [steepest decent](http://en.wikipedia.org/wiki/Gradient_descent).  Theta is the bias and weights.  Matrices are expected in [column major](http://en.wikipedia.org/wiki/Row-major_order#Column-major_order) order, columns are continuous in memory.
+Neuralnet with forward and backward propagation. Theta is the bias and weights.  Matrices are expected in [column major](http://en.wikipedia.org/wiki/Row-major_order#Column-major_order) order, columns are continuous in memory.  You need to set up the [blas function pointers](https://github.com/horixon/nervous/blob/master/nervous/src/blasfuncs.h), the ios wrapper uses [Accelerate Framework](https://developer.apple.com/library/mac/documentation/Accelerate/Reference/AccelerateFWRef/_index.html).  Vanilla net training with [steepest decent](http://en.wikipedia.org/wiki/Gradient_descent).  
 
-Example of usage [here](https://github.com/horixon/nervous/blob/master/nervous-ios/Nervous/NervousTests/NervousTests.swift).  The NN was originally written in Objc, and the C/C++ code is still tested in xcode.
+Example usage [here](https://github.com/horixon/nervous/blob/master/nervous-ios/Nervous/NervousTests/NervousTests.swift).  The NN was originally written in Objc, the [tests](https://github.com/horixon/nervous/blob/master/nervous-ios/Nervous/NervousTests) haven't been migrated to C++ yet so you need xcode to run the tests.
 
-###iOS Use
+###Use
 ```sh
 $ cd nervous
 $ ./configure
 $ make
+for ios
 $ ./build-ios.sh
 ```
-You need to inlcude the [module maps](http://clang.llvm.org/docs/Modules.html):  
-  - xcode add Search Paths - 'Header Search Paths': nervous/lib/include
-  - xcode add Search Paths - 'Library Search Paths': nervous/lib  
-  - xcode add Swift Compiler - Search Paths, 'Import Paths': nervous/lib  
+For ios/osx you need to include inlcude the [module maps](http://clang.llvm.org/docs/Modules.html) and lib in your project and set up the clbas function pointers:  
+  - xcode add Search Paths -> 'Header Search Paths': nervous/lib/include
+  - xcode add Search Paths -> 'Library Search Paths': nervous/lib  
+  - xcode add Swift Compiler -> Search Paths -> 'Import Paths': nervous/lib  
   
-If you dont want to init the cblass stuff there is a swift wrapper framework.
-  - Add the above paths to your project
-  - Also add in xcode Swift Compiler - Search Paths, 'Import Paths': Nervous 
-  - xcode add Search Paths - 'Header Search Paths': Nervous
-  - Include the Nervous project
+There is a Swift wrapper framework with a [basic NN wrapper](https://github.com/horixon/nervous/tree/master/nervous-ios/Nervous).
+  - Add the paths above to your project
+  - xcode add Swift Compiler -> Search Paths -> 'Import Paths': Nervous 
+  - xcode add Search Paths -> 'Header Search Paths': Nervous
+  - Include Nervous project in your workspace
  
 #####References
 [Pattern Classification](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471056693.html)  
