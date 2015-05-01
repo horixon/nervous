@@ -24,7 +24,7 @@ $ make
 for ios
 $ ./build-ios.sh
 ```
-For ios/osx you need to include inlcude the [module maps](http://clang.llvm.org/docs/Modules.html) and lib in your project and set up the clbas function pointers:  
+For ios/osx you need to include inlcude the [module maps](http://clang.llvm.org/docs/Modules.html) and lib in your project and set up the [clbas function pointers](https://github.com/horixon/nervous/blob/master/nervous-ios/Nervous/Nervous/initblas.c):  
   - xcode add Search Paths -> 'Header Search Paths': nervous/lib/include
   - xcode add Search Paths -> 'Library Search Paths': nervous/lib  
   - xcode add Swift Compiler -> Search Paths -> 'Import Paths': nervous/lib  
