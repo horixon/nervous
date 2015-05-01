@@ -19,6 +19,8 @@ Example of usage [here](https://github.com/horixon/nervous/blob/master/nervous-i
 ###iOS Use
 ```sh
 $ cd nervous
+$ ./configure
+$ make
 $ ./build-ios.sh
 ```
 You need to inlcude the [module maps](http://clang.llvm.org/docs/Modules.html):  
